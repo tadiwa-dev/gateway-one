@@ -151,7 +151,7 @@ export default function App() {
 
                     <div className="animate-fade-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
                         <button className="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-indigo-600 text-white rounded-full text-lg font-bold transition-all duration-300 shadow-xl shadow-slate-200 hover:shadow-indigo-200 flex items-center justify-center gap-2 group transform hover:-translate-y-1">
-                            Start your free trial
+                            Watch a Demo
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
                         </button>
                         <button className="w-full sm:w-auto px-8 py-4 bg-white/50 backdrop-blur-sm hover:bg-white text-slate-700 border border-slate-200 hover:border-slate-300 rounded-full text-lg font-bold transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-1">
@@ -479,7 +479,7 @@ export default function App() {
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
                             <button className="px-10 py-5 bg-white text-indigo-900 hover:text-indigo-600 hover:bg-slate-50 rounded-full text-lg font-black transition-all duration-300 shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 transform hover:-translate-y-1 hover:scale-105 active:scale-95">
-                                Start your free trial
+                                Watch a Demo
                             </button>
                             <button className="px-10 py-5 bg-white/10 text-white hover:bg-white/20 border border-white/20 backdrop-blur-md rounded-full text-lg font-bold transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 active:scale-95">
                                 Request a Demo
