@@ -10,8 +10,20 @@ import {
     MessageSquareHeart,
     Inbox,
     Send,
-    ChevronRight
+    ChevronRight,
+    Bot,
+    ShieldCheck,
+    LineChart
 } from 'lucide-react';
+
+// Import all custom screenshot assets
+import logoImage from './assets/paNhari Logo.png';
+import imgAnalyticsDash from './assets/Integrated Program Analytics Dashboard.png';
+import imgAppReview from './assets/Application Review & Selection Governance System.png';
+import imgStudentMgmt from './assets/Student Management & Cohort Oversight System.png';
+import imgContentFeedback from './assets/Content & Feedback Intelligence System.png';
+import imgChatbot from './assets/AI-Powered Data Exploration Chatbot.png';
+import imgRbac from './assets/Role-Based Access Control (RBAC) & Data Governance.png';
 
 export default function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,6 +70,7 @@ export default function App() {
         .delay-300 { animation-delay: 300ms; }
         .delay-400 { animation-delay: 400ms; }
         .delay-500 { animation-delay: 500ms; }
+        .delay-600 { animation-delay: 600ms; }
         
         html { scroll-behavior: smooth; }
         
@@ -73,10 +86,8 @@ export default function App() {
             <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-panel shadow-sm py-2' : 'bg-transparent py-4'}`}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
-                        <div className="flex items-center gap-2 cursor-pointer group hover:scale-105 transition-transform duration-300">
-                            <div className="w-10 h-10 bg-gradient-to-tr from-indigo-600 to-violet-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200 group-hover:shadow-indigo-300 transition-shadow">
-                                <Sparkles className="w-5 h-5 text-white" />
-                            </div>
+                        <div className="flex items-center gap-3 cursor-pointer group hover:scale-105 transition-transform duration-300">
+                            <img src={logoImage} alt="paNhari Logo" className="w-10 h-10 object-contain drop-shadow-md group-hover:drop-shadow-lg transition-all" />
                             <span className="font-extrabold text-2xl tracking-tight text-slate-900">paNhari</span>
                         </div>
 
@@ -119,7 +130,7 @@ export default function App() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
                         </span>
-                        A better way to manage programs
+                        A holistic way to manage programs
                         <ChevronRight className="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform" />
                     </div>
 
@@ -149,102 +160,21 @@ export default function App() {
                     </div>
                 </div>
 
-                {/* Abstract UI Mockup */}
-                <div className="mt-24 max-w-5xl mx-auto relative animate-fade-up delay-400">
+                {/* Hero Product Screenshot */}
+                <div className="mt-24 max-w-6xl mx-auto relative animate-fade-up delay-400">
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#FAFAFA] via-[#FAFAFA]/90 to-transparent z-20 h-40 pointer-events-none"></div>
 
                     <div className="absolute -left-10 top-20 w-32 h-32 bg-indigo-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-float"></div>
                     <div className="absolute -right-10 top-40 w-32 h-32 bg-violet-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-float-delayed"></div>
 
-                    <div className="glass-panel rounded-2xl md:rounded-[2.5rem] shadow-2xl shadow-indigo-100/50 p-2 md:p-4 transform hover:-translate-y-2 transition-transform duration-500 relative z-10">
-                        <div className="bg-white/80 backdrop-blur-xl rounded-xl md:rounded-[2rem] border border-white/60 h-[400px] md:h-[600px] overflow-hidden flex flex-col shadow-inner">
-                            <div className="h-16 border-b border-slate-100/60 bg-white/40 flex items-center px-6 justify-between flex-shrink-0">
-                                <div className="flex items-center gap-4">
-                                    <div className="flex gap-2.5 mr-4 hover:opacity-80 transition-opacity">
-                                        <div className="w-3 h-3 rounded-full bg-[#ff5f56] shadow-sm"></div>
-                                        <div className="w-3 h-3 rounded-full bg-[#ffbd2e] shadow-sm"></div>
-                                        <div className="w-3 h-3 rounded-full bg-[#27c93f] shadow-sm"></div>
-                                    </div>
-                                    <div className="w-32 h-4 bg-slate-100/80 rounded-full"></div>
-                                    <div className="w-24 h-4 bg-slate-100/80 rounded-full hidden md:block"></div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <div className="w-8 h-8 bg-slate-100/80 rounded-full hidden sm:block"></div>
-                                    <div className="w-9 h-9 bg-gradient-to-tr from-indigo-500 to-violet-500 rounded-full shadow-md shadow-indigo-200 cursor-pointer hover:scale-110 transition-transform"></div>
-                                </div>
-                            </div>
-
-                            <div className="flex-1 p-6 flex gap-6 overflow-hidden bg-slate-50/30">
-                                <div className="flex-1 min-w-[250px] space-y-4">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <span className="text-sm font-bold text-slate-700 tracking-wide uppercase">New</span>
-                                        <span className="text-xs bg-white border border-slate-200 text-slate-700 font-bold px-3 py-1 rounded-full shadow-sm">24</span>
-                                    </div>
-                                    {[1, 2, 3].map((i) => (
-                                        <div key={i} className="bg-white p-5 rounded-[1.25rem] border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 space-y-4 hover:-translate-y-1 transform cursor-pointer group hover:border-indigo-100">
-                                            <div className="flex justify-between items-start">
-                                                <div className="flex items-center gap-3">
-                                                    <div className="w-10 h-10 bg-gradient-to-br from-indigo-50 to-violet-50 rounded-full flex items-center justify-center text-indigo-600 font-bold text-sm border border-indigo-100/50 group-hover:scale-110 transition-transform shadow-inner">
-                                                        {String.fromCharCode(64 + i)}
-                                                    </div>
-                                                    <div className="space-y-2.5">
-                                                        <div className="w-20 h-2.5 bg-slate-200 rounded-full"></div>
-                                                        <div className="w-12 h-2 bg-slate-100 rounded-full"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="w-16 h-5 bg-emerald-50 rounded-md border border-emerald-100 group-hover:bg-emerald-100 transition-colors"></div>
-                                            </div>
-                                            <div className="pt-2 space-y-2">
-                                                <div className="w-full h-2 bg-slate-50 rounded-full"></div>
-                                                <div className="w-2/3 h-2 bg-slate-50 rounded-full"></div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                <div className="flex-1 min-w-[250px] space-y-4 hidden md:block">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <span className="text-sm font-bold text-slate-700 tracking-wide uppercase">Reviewing</span>
-                                        <span className="text-xs bg-indigo-50 border border-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-full shadow-sm animate-pulse-soft">12</span>
-                                    </div>
-                                    {[1, 2].map((i) => (
-                                        <div key={i} className="bg-white p-5 rounded-[1.25rem] border border-indigo-100/50 shadow-md shadow-indigo-100/30 space-y-4 relative overflow-hidden group hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-200/40 transition-all duration-300 cursor-pointer">
-                                            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-indigo-400 to-violet-500 rounded-l-[1.25rem] group-hover:w-2 transition-all"></div>
-                                            <div className="pl-1">
-                                                <div className="flex items-center gap-3">
-                                                    <div className="w-10 h-10 bg-slate-50 rounded-full border border-slate-100"></div>
-                                                    <div className="space-y-2.5">
-                                                        <div className="w-24 h-2.5 bg-slate-200/80 rounded-full"></div>
-                                                        <div className="w-16 h-2 bg-slate-100 rounded-full"></div>
-                                                    </div>
-                                                </div>
-                                                <div className="mt-4 w-full h-2 bg-slate-50 rounded-full"></div>
-                                                <div className="flex justify-between items-center pt-4">
-                                                    <div className="flex -space-x-2">
-                                                        <div className="w-7 h-7 rounded-full bg-indigo-100 border-2 border-white relative z-20"></div>
-                                                        <div className="w-7 h-7 rounded-full bg-violet-100 border-2 border-white relative z-10"></div>
-                                                    </div>
-                                                    <div className="w-16 h-2 bg-slate-100 rounded-full"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                <div className="flex-1 min-w-[250px] space-y-4 hidden lg:block opacity-60 grayscale-[0.2]">
-                                    <div className="flex justify-between items-center mb-6">
-                                        <span className="text-sm font-bold text-slate-700 tracking-wide uppercase">Accepted</span>
-                                        <span className="text-xs bg-emerald-50 border border-emerald-100 text-emerald-700 font-bold px-3 py-1 rounded-full shadow-sm">8</span>
-                                    </div>
-                                    <div className="bg-white p-5 rounded-[1.25rem] border border-slate-100 shadow-sm space-y-4">
-                                        <div className="flex items-center gap-3">
-                                            <div className="w-10 h-10 bg-slate-50 rounded-full"></div>
-                                            <div className="w-20 h-2.5 bg-slate-200 rounded-full"></div>
-                                        </div>
-                                        <div className="mt-2 w-full h-2 bg-slate-50 rounded-full"></div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="glass-panel rounded-2xl md:rounded-[2.5rem] shadow-2xl shadow-indigo-100/50 p-2 md:p-3 transform hover:-translate-y-2 transition-transform duration-500 relative z-10 mx-4 md:mx-0">
+                        <div className="bg-white/80 backdrop-blur-xl rounded-xl md:rounded-[2rem] border border-white/60 overflow-hidden flex flex-col shadow-inner relative group">
+                            <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent pointer-events-none z-10"></div>
+                            <img
+                                src={imgAnalyticsDash}
+                                alt="Integrated Program Analytics Dashboard"
+                                className="w-full h-auto object-cover rounded-xl md:rounded-[1.8rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                            />
                         </div>
                     </div>
                 </div>
@@ -316,9 +246,10 @@ export default function App() {
 
             {/* Deep Dive Features */}
             <section className="py-24 bg-white/40 border-y border-slate-100 overflow-hidden relative" id="how-it-works">
-                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white -z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-[#FAFAFA] -z-10"></div>
 
                 <div className="max-w-7xl mx-auto px-4">
+                    {/* Deep Dive 1: Application Review */}
                     <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24 mb-32 group">
                         <div className="flex-1 space-y-8 animate-fade-up">
                             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-bold border border-blue-100/50 shadow-sm">
@@ -329,10 +260,10 @@ export default function App() {
                                 Roll out the red carpet for your applicants.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Create beautifully branded, mobile-friendly application forms in minutes. Gather files, long-form answers, and portfolios effortlessly.
+                                Create beautifully branded, mobile-friendly application forms in minutes. Gather files, long-form answers, and portfolios effortlessly. Review applications with absolute governance.
                             </p>
                             <ul className="space-y-4 pt-4">
-                                {['Drag-and-drop form builder', 'Auto-save progress for candidates', 'Mobile-optimized out of the box'].map((item, i) => (
+                                {['Drag-and-drop form builder', 'Auto-save progress for candidates', 'Holistic Selection Governance System'].map((item, i) => (
                                     <li key={i} className="flex items-center gap-4 text-slate-700 text-lg font-medium group-hover:translate-x-3 transition-transform duration-500" style={{ transitionDelay: `${i * 100}ms` }}>
                                         <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 shadow-sm border border-blue-200">
                                             <CheckCircle2 className="w-4 h-4 text-blue-600" />
@@ -344,24 +275,24 @@ export default function App() {
                         </div>
                         <div className="flex-1 w-full relative group perspective-1000">
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-200/50 to-indigo-100/50 rounded-[3rem] transform rotate-3 scale-105 group-hover:rotate-6 group-hover:scale-110 transition-all duration-700 blur-sm"></div>
-                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
-                                alt="Person smiling at laptop"
-                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover h-[450px] transform group-hover:-rotate-2 transition-transform duration-700 z-10" />
+                            <img src={imgAppReview}
+                                alt="Application Review & Selection Governance System"
+                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover transform group-hover:-rotate-2 transition-transform duration-700 z-10" />
 
-                            {/* Floating UI Element */}
                             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 z-20 animate-float flex items-center gap-4 group-hover:scale-105 transition-transform">
                                 <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <div className="text-sm font-bold text-slate-900">Application Submitted</div>
-                                    <div className="text-xs font-semibold text-slate-500">Just now</div>
+                                    <div className="text-sm font-bold text-slate-900">Application Validated</div>
+                                    <div className="text-xs font-semibold text-slate-500">Scored automatically</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row-reverse items-center gap-16 md:gap-24 group">
+                    {/* Deep Dive 2: Automated Workflows / Student Mgmt */}
+                    <div className="flex flex-col md:flex-row-reverse items-center gap-16 md:gap-24 mb-32 group">
                         <div className="flex-1 space-y-8 animate-fade-up">
                             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-violet-50 text-violet-700 text-sm font-bold border border-violet-100/50 shadow-sm">
                                 <Send className="w-4 h-4" />
@@ -371,10 +302,10 @@ export default function App() {
                                 Let the system do the heavy lifting.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Move candidates from "Review" to "Interview" and let paNhari automatically trigger invites. You maintain the human touch; we handle the mechanics.
+                                Move candidates from "Review" to "Interview" and let paNhari automatically trigger invites. Manage students and oversee cohorts without the administrative nightmare.
                             </p>
                             <ul className="space-y-4 pt-4">
-                                {['Customizable pipeline stages', 'Trigger-based email templates', 'Bulk actions for fast processing'].map((item, i) => (
+                                {['Customizable pipeline stages', 'Trigger-based email templates', 'Cohort Oversight Processing'].map((item, i) => (
                                     <li key={i} className="flex items-center gap-4 text-slate-700 text-lg font-medium group-hover:-translate-x-3 transition-transform duration-500" style={{ transitionDelay: `${i * 100}ms` }}>
                                         <div className="w-7 h-7 rounded-full bg-violet-100 flex items-center justify-center flex-shrink-0 shadow-sm border border-violet-200">
                                             <CheckCircle2 className="w-4 h-4 text-violet-600" />
@@ -384,24 +315,120 @@ export default function App() {
                                 ))}
                             </ul>
                         </div>
-                        <div className="flex-1 w-full relative">
+                        <div className="flex-1 w-full relative group perspective-1000">
                             <div className="absolute inset-0 bg-gradient-to-tr from-violet-200/50 to-fuchsia-100/50 rounded-[3rem] transform -rotate-3 scale-105 group-hover:-rotate-6 group-hover:scale-110 transition-all duration-700 blur-sm"></div>
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-                                alt="Team collaborating"
-                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover h-[450px] transform group-hover:rotate-2 transition-transform duration-700 z-10" />
+                            <img src={imgStudentMgmt}
+                                alt="Student Management & Cohort Oversight System"
+                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover transform group-hover:rotate-2 transition-transform duration-700 z-10" />
 
-                            {/* Floating UI Element */}
                             <div className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 z-20 animate-float-delayed flex items-center gap-4 group-hover:scale-105 transition-transform">
                                 <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
                                     <Send className="w-5 h-5 ml-1" />
                                 </div>
                                 <div>
-                                    <div className="text-sm font-bold text-slate-900">Email Triggered</div>
+                                    <div className="text-sm font-bold text-slate-900">Automation Triggered</div>
                                     <div className="text-xs font-semibold text-slate-500">Interview Invite Sent</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    {/* Deep Dive 3: Content Intelligence */}
+                    <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24 mb-32 group">
+                        <div className="flex-1 space-y-8 animate-fade-up">
+                            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-amber-50 text-amber-700 text-sm font-bold border border-amber-100/50 shadow-sm">
+                                <LineChart className="w-4 h-4" />
+                                Content Intelligence
+                            </div>
+                            <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
+                                Insights that drive better programs.
+                            </h2>
+                            <p className="text-xl text-slate-600 leading-relaxed font-medium">
+                                Analyze applicant feedback, essays, and performance with intelligence tools. Identify trends instantly and make data-driven decisions that enhance your program's quality.
+                            </p>
+                            <ul className="space-y-4 pt-4">
+                                {['Sentiment & feedback analysis', 'Real-time performance metrics', 'Custom dynamic reporting'].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-4 text-slate-700 text-lg font-medium group-hover:translate-x-3 transition-transform duration-500" style={{ transitionDelay: `${i * 100}ms` }}>
+                                        <div className="w-7 h-7 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0 shadow-sm border border-amber-200">
+                                            <CheckCircle2 className="w-4 h-4 text-amber-600" />
+                                        </div>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="flex-1 w-full relative group perspective-1000">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-amber-200/50 to-orange-100/50 rounded-[3rem] transform rotate-3 scale-105 group-hover:rotate-6 group-hover:scale-110 transition-all duration-700 blur-sm"></div>
+                            <img src={imgContentFeedback}
+                                alt="Content & Feedback Intelligence System"
+                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover transform group-hover:-rotate-2 transition-transform duration-700 z-10" />
+                        </div>
+                    </div>
+
+                    {/* Deep Dive 4: AI Chatbot */}
+                    <div className="flex flex-col md:flex-row-reverse items-center gap-16 md:gap-24 mb-32 group">
+                        <div className="flex-1 space-y-8 animate-fade-up">
+                            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-teal-50 text-teal-700 text-sm font-bold border border-teal-100/50 shadow-sm">
+                                <Bot className="w-4 h-4" />
+                                AI-Powered Exploration
+                            </div>
+                            <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
+                                Your program data, conversationalized.
+                            </h2>
+                            <p className="text-xl text-slate-600 leading-relaxed font-medium">
+                                Ask questions about your cohorts, applications, and processes in plain English. Get instant, accurate insights without writing a single query or wrestling with spreadsheets.
+                            </p>
+                            <ul className="space-y-4 pt-4">
+                                {['Conversational data queries', 'Instant visualizations', 'Predictive cohort analytics'].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-4 text-slate-700 text-lg font-medium group-hover:-translate-x-3 transition-transform duration-500" style={{ transitionDelay: `${i * 100}ms` }}>
+                                        <div className="w-7 h-7 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0 shadow-sm border border-teal-200">
+                                            <CheckCircle2 className="w-4 h-4 text-teal-600" />
+                                        </div>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="flex-1 w-full relative group perspective-1000">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-teal-200/50 to-emerald-100/50 rounded-[3rem] transform -rotate-3 scale-105 group-hover:-rotate-6 group-hover:scale-110 transition-all duration-700 blur-sm"></div>
+                            <img src={imgChatbot}
+                                alt="AI-Powered Data Exploration Chatbot"
+                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover transform group-hover:rotate-2 transition-transform duration-700 z-10" />
+                        </div>
+                    </div>
+
+                    {/* Deep Dive 5: RBAC */}
+                    <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24 group">
+                        <div className="flex-1 space-y-8 animate-fade-up">
+                            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-slate-100 text-slate-700 text-sm font-bold border border-slate-200/50 shadow-sm">
+                                <ShieldCheck className="w-4 h-4" />
+                                Enterprise Security
+                            </div>
+                            <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
+                                Control who sees what, effortlessly.
+                            </h2>
+                            <p className="text-xl text-slate-600 leading-relaxed font-medium">
+                                Granular permissions ensure your review committee only accesses applications assigned to them. Maintain absolute data governance, privacy, and organizational compliance.
+                            </p>
+                            <ul className="space-y-4 pt-4">
+                                {['Role-Based Access Control (RBAC)', 'Audit logging & compliance', 'Strict Data Governance'].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-4 text-slate-700 text-lg font-medium group-hover:translate-x-3 transition-transform duration-500" style={{ transitionDelay: `${i * 100}ms` }}>
+                                        <div className="w-7 h-7 rounded-full bg-slate-200 flex items-center justify-center flex-shrink-0 shadow-sm border border-slate-300">
+                                            <CheckCircle2 className="w-4 h-4 text-slate-700" />
+                                        </div>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="flex-1 w-full relative group perspective-1000">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-200/50 to-gray-100/50 rounded-[3rem] transform rotate-3 scale-105 group-hover:rotate-6 group-hover:scale-110 transition-all duration-700 blur-sm"></div>
+                            <img src={imgRbac}
+                                alt="Role-Based Access Control (RBAC) & Data Governance"
+                                className="relative rounded-[2.5rem] shadow-2xl border border-white w-full object-cover transform group-hover:-rotate-2 transition-transform duration-700 z-10" />
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -467,10 +494,8 @@ export default function App() {
             <footer className="bg-[#FAFAFA] pt-20 pb-12 px-4 border-t border-slate-200/50">
                 <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-12 gap-12 mb-20 animate-fade-up">
                     <div className="col-span-2 md:col-span-4">
-                        <div className="flex items-center gap-2 mb-6 group cursor-pointer inline-flex">
-                            <div className="w-10 h-10 bg-gradient-to-tr from-indigo-600 to-violet-500 rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform shadow-md">
-                                <Sparkles className="w-5 h-5 text-white" />
-                            </div>
+                        <div className="flex items-center gap-3 mb-6 group cursor-pointer inline-flex">
+                            <img src={logoImage} alt="paNhari Logo" className="w-10 h-10 object-contain drop-shadow-sm group-hover:drop-shadow-md group-hover:rotate-12 transition-transform" />
                             <span className="font-black text-2xl tracking-tight text-slate-900">paNhari</span>
                         </div>
                         <p className="text-slate-500 max-w-sm leading-relaxed text-lg font-medium">
