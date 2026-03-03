@@ -16,6 +16,9 @@ import {
     LineChart
 } from 'lucide-react';
 
+// Import ContainerScroll animation component
+import { ContainerScroll } from './components/ui/container-scroll-animation';
+
 // Import all custom screenshot assets
 import logoImage from './assets/paNhari Logo.png';
 import imgAnalyticsDash from './assets/Integrated Program Analytics Dashboard.png';
@@ -160,24 +163,24 @@ export default function App() {
                     </div>
                 </div>
 
-                {/* Hero Product Screenshot */}
-                <div className="mt-24 max-w-6xl mx-auto relative animate-fade-up delay-400">
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#FAFAFA] via-[#FAFAFA]/90 to-transparent z-20 h-40 pointer-events-none"></div>
-
-                    <div className="absolute -left-10 top-20 w-32 h-32 bg-indigo-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-float"></div>
-                    <div className="absolute -right-10 top-40 w-32 h-32 bg-violet-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-float-delayed"></div>
-
-                    <div className="glass-panel rounded-2xl md:rounded-[2.5rem] shadow-2xl shadow-indigo-100/50 p-2 md:p-3 transform hover:-translate-y-2 transition-transform duration-500 relative z-10 mx-4 md:mx-0">
-                        <div className="bg-white/80 backdrop-blur-xl rounded-xl md:rounded-[2rem] border border-white/60 overflow-hidden flex flex-col shadow-inner relative group">
-                            <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent pointer-events-none z-10"></div>
-                            <img
-                                src={imgAnalyticsDash}
-                                alt="Integrated Program Analytics Dashboard"
-                                className="w-full h-auto object-cover rounded-xl md:rounded-[1.8rem] transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                            />
-                        </div>
-                    </div>
-                </div>
+                {/* Hero Product Screenshot — ContainerScroll Animation */}
+                <ContainerScroll
+                    titleComponent={
+                        <>
+                            <p className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4">Your command centre</p>
+                            <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">
+                                Everything at a glance.
+                            </h2>
+                        </>
+                    }
+                >
+                    <img
+                        src={imgAnalyticsDash}
+                        alt="Integrated Program Analytics Dashboard"
+                        className="mx-auto rounded-2xl object-cover h-full w-full object-top"
+                        draggable={false}
+                    />
+                </ContainerScroll>
             </section>
 
             {/* Social Proof */}
