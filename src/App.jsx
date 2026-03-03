@@ -133,15 +133,15 @@ export default function App() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
                         </span>
-                        A holistic way to manage programs
+                        Every application is someone's next chapter
                         <ChevronRight className="w-4 h-4 text-indigo-400 group-hover:translate-x-1 transition-transform" />
                     </div>
 
                     <h1 className="animate-fade-up delay-100 text-5xl md:text-7xl lg:text-[5.5rem] font-black tracking-tight text-slate-900 mb-8 max-w-5xl mx-auto leading-[1.05]">
-                        Turn application chaos into
+                        See the person behind
                         <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-500 relative inline-block px-2">
-                            clear decisions.
+                            every application.
                             <svg className="absolute w-full h-4 -bottom-2 left-0 text-fuchsia-300/40 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 15 100 5" stroke="currentColor" strokeWidth="4" strokeLinecap="round" fill="none" />
                             </svg>
@@ -149,7 +149,7 @@ export default function App() {
                     </h1>
 
                     <p className="animate-fade-up delay-200 text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
-                        From the first submission to the final welcome email, paNhari brings your entire selection process into one peaceful, unified workspace. Focus on the people, not the paperwork.
+                        Every name in your inbox belongs to someone who stayed up late crafting their application. paNhari helps you give each person the consideration they deserve — without drowning in process.
                     </p>
 
                     <div className="animate-fade-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -167,9 +167,9 @@ export default function App() {
                 <ContainerScroll
                     titleComponent={
                         <>
-                            <p className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4">Your command centre</p>
+                            <p className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4">Built around people, not paperwork</p>
                             <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">
-                                Everything at a glance.
+                                Every story, in one place.
                             </h2>
                         </>
                     }
@@ -187,7 +187,7 @@ export default function App() {
             <section className="py-14 border-y border-slate-200/40 relative z-20 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#FAFAFA] via-transparent to-[#FAFAFA] z-10 pointer-events-none w-full"></div>
                 <div className="max-w-7xl mx-auto px-4 text-center">
-                    <p className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-8">Empowering forward-thinking teams</p>
+                    <p className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-8">Trusted by teams who believe people come first</p>
                     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
                         <div className="text-2xl font-black font-serif hover:text-indigo-900 transition-colors duration-300 transform hover:scale-105">Acme</div>
                         <div className="text-xl font-black tracking-tight hover:text-indigo-900 transition-colors duration-300 transform hover:scale-105">GLOBAL <span className="font-light">CO</span></div>
@@ -205,10 +205,10 @@ export default function App() {
 
                 <div className="text-center max-w-3xl mx-auto mb-20 md:mb-28 animate-fade-up">
                     <h2 className="text-4xl md:text-5xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight leading-tight">
-                        Reviewing shouldn't be exhausting.
+                        Every applicant deserves a fair read.
                     </h2>
                     <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                        We built paNhari because we were tired of losing great candidates in messy email threads and giant spreadsheets. It's designed to give your team breathing room.
+                        Behind every submission is a person who believed in your program enough to apply. paNhari makes sure no one gets lost because of a cluttered inbox or a missed email thread.
                     </p>
                 </div>
 
@@ -216,20 +216,20 @@ export default function App() {
                     {[
                         {
                             icon: <Inbox className="w-8 h-8" />,
-                            title: "One Unified Inbox",
-                            desc: "Every application, document, and review note lives in a single, perfectly organized profile. Stop searching for that one email.",
+                            title: "No One Falls Through the Cracks",
+                            desc: "Every application, document, and review note lives in one profile — because each one belongs to a real person who chose to apply to you.",
                             color: "indigo"
                         },
                         {
                             icon: <MessageSquareHeart className="w-8 h-8" />,
-                            title: "Respectful Workflow",
-                            desc: "Automate personalized updates so applicants are never left in the dark. Send acceptances or rejections with one elegant click.",
+                            title: "Keep Every Applicant Informed",
+                            desc: "No one should have to wonder about their fate. Automated, warm updates keep applicants in the loop — with the dignity they deserve.",
                             color: "emerald"
                         },
                         {
                             icon: <Users className="w-8 h-8" />,
-                            title: "Joyful Collaboration",
-                            desc: "Invite your committee to score and comment in an interface so intuitive, they won't need a single training session to use it.",
+                            title: "Decide Together, Decide Fairly",
+                            desc: "Bring your committee together to review with clarity and empathy, so the right people get through — not just the loudest voices.",
                             color: "amber"
                         }
                     ].map((feature, i) => (
@@ -260,10 +260,10 @@ export default function App() {
                                 Custom Portals
                             </div>
                             <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                                Roll out the red carpet for your applicants.
+                                First impressions matter. Make yours count.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Create beautifully branded, mobile-friendly application forms in minutes. Gather files, long-form answers, and portfolios effortlessly. Review applications with absolute governance.
+                                An applicant's first touch with your program is the application form. Make it feel as thoughtful as your program — beautiful, frictionless, and worthy of the effort they put in.
                             </p>
                             <ul className="space-y-4 pt-4">
                                 {['Drag-and-drop form builder', 'Auto-save progress for candidates', 'Holistic Selection Governance System'].map((item, i) => (
@@ -302,10 +302,10 @@ export default function App() {
                                 Automated Workflows
                             </div>
                             <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                                Let the system do the heavy lifting.
+                                Spend your energy on people, not process.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Move candidates from "Review" to "Interview" and let paNhari automatically trigger invites. Manage students and oversee cohorts without the administrative nightmare.
+                                When a promising applicant moves forward, paNhari sends the invite before you've poured your coffee. The human work stays human. The administrative weight doesn't.
                             </p>
                             <ul className="space-y-4 pt-4">
                                 {['Customizable pipeline stages', 'Trigger-based email templates', 'Cohort Oversight Processing'].map((item, i) => (
@@ -344,10 +344,10 @@ export default function App() {
                                 Content Intelligence
                             </div>
                             <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                                Insights that drive better programs.
+                                Understand your people. Build better programs.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Analyze applicant feedback, essays, and performance with intelligence tools. Identify trends instantly and make data-driven decisions that enhance your program's quality.
+                                The words your applicants write tell you more than any spreadsheet ever could. paNhari surfaces the patterns in their stories so you can build programs that serve the next generation of people, not just metrics.
                             </p>
                             <ul className="space-y-4 pt-4">
                                 {['Sentiment & feedback analysis', 'Real-time performance metrics', 'Custom dynamic reporting'].map((item, i) => (
@@ -376,10 +376,10 @@ export default function App() {
                                 AI-Powered Exploration
                             </div>
                             <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                                Your program data, conversationalized.
+                                Ask real questions. Get real answers.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Ask questions about your cohorts, applications, and processes in plain English. Get instant, accurate insights without writing a single query or wrestling with spreadsheets.
+                                Ask "Who are our most engaged alumni?" or "What do our strongest cohorts have in common?" in plain English — and get answers that help you make decisions grounded in people, not just numbers.
                             </p>
                             <ul className="space-y-4 pt-4">
                                 {['Conversational data queries', 'Instant visualizations', 'Predictive cohort analytics'].map((item, i) => (
@@ -408,10 +408,10 @@ export default function App() {
                                 Enterprise Security
                             </div>
                             <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                                Control who sees what, effortlessly.
+                                Every person's story, protected.
                             </h2>
                             <p className="text-xl text-slate-600 leading-relaxed font-medium">
-                                Granular permissions ensure your review committee only accesses applications assigned to them. Maintain absolute data governance, privacy, and organizational compliance.
+                                Applicants trust you with their personal stories and ambitions. Granular permissions ensure that trust is honoured — with each reviewer seeing only what they need to, nothing more.
                             </p>
                             <ul className="space-y-4 pt-4">
                                 {['Role-Based Access Control (RBAC)', 'Audit logging & compliance', 'Strict Data Governance'].map((item, i) => (
@@ -451,7 +451,7 @@ export default function App() {
                         ))}
                     </div>
                     <blockquote className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-14 tracking-tight text-white/95">
-                        "Before paNhari, our accelerator applications were a nightmare. Now, we select better cohorts because we can finally see the big picture."
+                        "We used to miss great people. Not intentionally — just because the process was too broken to give everyone a real shot. paNhari changed that."
                     </blockquote>
                     <div className="flex items-center justify-center gap-5">
                         <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-full flex items-center justify-center text-xl font-black shadow-xl shadow-indigo-500/20 border-2 border-white/20 hover:scale-110 transition-transform cursor-pointer">
@@ -475,10 +475,10 @@ export default function App() {
 
                     <div className="relative z-10 text-white">
                         <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight leading-[1.05]">
-                            Ready to humanize your<br className="hidden md:block" /> application process?
+                            Ready to put<br className="hidden md:block" /> people first?
                         </h2>
                         <p className="text-xl md:text-2xl text-indigo-100/90 mb-12 max-w-3xl mx-auto font-medium">
-                            Join hundreds of organizations using paNhari to run stress-free programs. Set up takes minutes, not weeks.
+                            Join the organizations who believe the best decision they ever made was to treat every applicant like the person they are. Set up in minutes. Impact that lasts.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
                             <button className="px-10 py-5 bg-white text-indigo-900 hover:text-indigo-600 hover:bg-slate-50 rounded-full text-lg font-black transition-all duration-300 shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 transform hover:-translate-y-1 hover:scale-105 active:scale-95">
@@ -502,7 +502,7 @@ export default function App() {
                             <span className="font-black text-2xl tracking-tight text-slate-900">paNhari</span>
                         </div>
                         <p className="text-slate-500 max-w-sm leading-relaxed text-lg font-medium">
-                            Making program management human-centered, clear, and perfectly organized for everyone involved.
+                            Because behind every application is a person with a dream worth seeing clearly.
                         </p>
                     </div>
 
